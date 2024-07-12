@@ -1,4 +1,4 @@
-Faster R-CNN for Dangerous Items Detection (PyTorch implementation)
+# Faster R-CNN for Dangerous Items Detection (PyTorch implementation)
 
 There are many implementations of Faster R-CNNs available in the Internet. Unfortunately, most of them contain bugs or were designed for older versions of Python and machine learning libraries. After testing many such solutions, I used one of the few implementations designed for newer versions of PyTorch and TensorFlow. This implementation was shared by Bart Trzynadlowski on the https://github.com/trzy/FasterRCNN website. After removing a number of bugs and making the necessary changes to the configuration of the training and evaluation processes, I applied an implementation for PyTorch to build the Faster R-CNN model for dangerous items detection. The _packages.txt_ file contains the necessary libraries and their versions. The dataset I used can be downloaded from the Zenodo platform: https://zenodo.org/records/11582054.
 
