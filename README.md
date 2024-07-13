@@ -13,3 +13,5 @@ _tune.bat_ – starts the 2nd stage of training with a learning speed of 1E-4;
 _eval.bat_ – performs an evaluation for the test set and calculates a set of parameters to assess the quality of the model.
 
 The _tune.bat_ and _eval.bat_ files use the NUMBER variable, which stores the number of the model with the best weights built during the previous stage. The information about the best models is displayed after the 1st and 2nd stages of training. For more information on implementation details, visit https://github.com/trzy/FasterRCNN.
+
+Selected excerpts from an experiment in which the above implementation of Faster R-CNN was used are shown in this video: https://zenodo.org/records/12736924.
