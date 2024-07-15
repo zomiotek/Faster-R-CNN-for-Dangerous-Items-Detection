@@ -2,6 +2,8 @@
 
 There are many implementations of Faster R-CNNs available in the Internet. Unfortunately, most of them contain bugs or were designed for older versions of Python and machine learning libraries. After testing many such solutions, I used one of the few implementations designed for newer versions of PyTorch and TensorFlow. This implementation was shared by Bart Trzynadlowski on the https://github.com/trzy/FasterRCNN website. After removing a number of bugs and making the necessary changes to the configuration of the training and evaluation processes, I applied an implementation for PyTorch to build the Faster R-CNN model for dangerous items detection. The _packages.txt_ file contains the necessary libraries and their versions. The dataset I used can be downloaded from the Zenodo platform: https://zenodo.org/records/11582054.
 
+![image](https://github.com/user-attachments/assets/7df790c5-1f31-4207-a931-c7d3035c277d)
+
 You can use different kind of backbones to build the Faster R-CNN model but my experiments showed that the ResNet152 provides higher accuracy compared to other architectures (https://www.preprints.org/manuscript/202406.1090/v1). The entire learning process consists of 2 stages. In the first one, the learning speed is 1E-3, while in the second stage, the value is 1E-4. After each training epoch, the mean average precision (mAP) of the model is calculated based on the test set. At the same time, the weights obtained in a given era are saved, so that you can choose the best set of weights after the entire training process is completed.
 
 In order to conduct training and evaluation, 3 batch files were prepared:
